@@ -1,0 +1,789 @@
+# If you are not sure what all these fields mean, please refer our documentation here:
+# https://evalai.readthedocs.io/en/latest/configuration.html
+title: Random Number Generator Challenge
+short_description: Random number generation challenge for each submission
+description: templates/description.html
+evaluation_details: templates/evaluation_details.html
+terms_and_conditions: templates/terms_and_conditions.html
+image: logo.jpg
+submission_guidelines: templates/submission_guidelines.html
+leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
+evaluation_script: evaluation_script.zip
+remote_evaluation: False
+is_docker_based: False
+start_date: 2019-01-01 00:00:00
+end_date: 2099-05-31 23:59:59
+published: True
+
+leaderboard:
+  - id: 1
+    schema:
+      {
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "default_order_by": "Total",
+        "metadata": {
+          "Metric1": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Metric2": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+        }
+      }
+
+challenge_phases:
+  - id: 1
+    name: Dev Phase
+    description: templates/challenge_phase_1_description.html
+    leaderboard_public: False
+    is_public: True
+    is_submission_public: True
+    start_date: 2019-01-19 00:00:00
+    end_date: 2099-04-25 23:59:59
+    test_annotation_file: annotations/test_annotations_devsplit.json
+    codename: dev
+    max_submissions_per_day: 5
+    max_submissions_per_month: 50
+    max_submissions: 50
+    default_submission_meta_attributes:
+      - name: method_name
+        is_visible: True
+      - name: method_description
+        is_visible: True
+      - name: project_url
+        is_visible: True
+      - name: publication_url
+        is_visible: True
+      - name: pl_reg_int_use_prd_name
+        is_visible: True
+      - name: pl_reg_int_use_prd_cl_use
+        is_visible: True
+      - name: pl_reg_int_use_prd_tsk
+        is_visible: True
+      - name: pl_reg_int_use_prd_cat
+        is_visible: True
+      - name: pl_reg_int_use_prd_usrgrp
+        is_visible: True
+      - name: pl_reg_int_use_prd_opmod
+        is_visible: True
+      - name: pl_reg_int_use_prd_autl
+        is_visible: True
+      - name: dc_tv_pl_dat_src
+        is_visible: True
+      - name: dc_tv_pl_dat_numsamp
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_noise
+        is_visible: True
+      - name: dc_tv_pl_dat_mis
+        is_visible: True
+      - name: dc_tv_pl_dat_inc_exc
+        is_visible: True
+      - name: dc_reg_dat_priv
+        is_visible: True
+      - name: dc_eth_dat_priv_cons
+        is_visible: True
+      - name: dc_eth_dat_priv_anon
+        is_visible: True
+      - name: dp_tv_numsamp
+        is_visible: True
+      - name: dp_tv_gndtrh
+        is_visible: True
+      - name: dp_tv_lbl
+        is_visible: True
+      - name: dp_tv_part
+        is_visible: True
+      - name: dp_tv_ovp
+        is_visible: True
+      - name: dp_eth_de_id
+        is_visible: True
+      - name: dp_reg_gndt
+        is_visible: True
+      - name: dp_tv_prev
+        is_visible: True
+      - name: dp_tv_preprop
+        is_visible: True
+      - name: mt_eth_sen
+        is_visible: True
+      - name: mt_tv_arch
+        is_visible: True
+      - name: mtun_tv_sen
+        is_visible: True
+      - name: mtun_tv_val
+        is_visible: True
+      - name: mtun_tv_fet
+        is_visible: True
+      - name: mtun_cl_decth
+        is_visible: True
+      - name: mtun_cl_set
+        is_visible: True
+      - name: meval_eth_usr
+        is_visible: True
+      - name: meval_tv_opt
+        is_visible: True
+      - name: meval_tv_param
+        is_visible: True
+      - name: meval_tv_gen
+        is_visible: True
+      - name: meval_tv_per_comp
+        is_visible: True
+      - name: meval_tv_per_comp_dis
+        is_visible: True
+      - name: meval_tv_intp_tdoff
+        is_visible: True
+      - name: meval_cl_permet_crt
+        is_visible: True
+      - name: meval_cl_patsaf
+        is_visible: True
+      - name: meval_cl_mod_spec
+        is_visible: True
+      - name: meval_cl_rskprob
+        is_visible: True
+      - name: mdeploy_cl_lat
+        is_visible: True
+      - name: mdeploy_cl_prac
+        is_visible: True
+      - name: mdeploy_cl_care_qual
+        is_visible: True
+      - name: mdeploy_cl_wkfl_int
+        is_visible: True
+      - name: mdeploy_cl_rsk_prob
+        is_visible: True
+      - name: mdeploy_cl_inp_feat
+        is_visible: True
+      - name: mdeploy_cl_recom
+        is_visible: True
+      - name: mdeploy_cl_patcom
+        is_visible: True
+      - name: mdeploy_reg_saf
+        is_visible: True
+      - name: mmain_reg_sys
+        is_visible: True
+      - name: mmain_reg_contlr
+        is_visible: True
+      - name: pl_reg_int_use_pat_patgrp
+        is_visible: True
+      - name: pl_reg_int_use_md_devplr
+        is_visible: True
+      - name: pl_reg_int_use_md_devkt
+        is_visible: True
+      - name: pl_reg_int_use_md_devperiod
+        is_visible: True
+      - name: pl_reg_int_use_md_reg
+        is_visible: True
+      - name: pl_reg_int_use_md_lic
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_plc
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_period
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_auth
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_fund
+        is_visible: True
+      - name: dc_tv_pl_dat_samprate
+        is_visible: True
+      - name: dc_tv_pl_dat_dim
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_devtyp
+        is_visible: True
+      - name: dc_eth_dat_incl_excl
+        is_visible: True
+      - name: dp_eth_saf_sec_prtcol
+        is_visible: True
+      - name: mt_tv_out
+        is_visible: True
+      - name: meval_tv_param_config
+        is_visible: True
+      - name: tgsymp1
+        is_visible: True
+      - name: tgsymp2
+        is_visible: True
+      - name: tgsymp3
+        is_visible: True
+      - name: tgsymp4
+        is_visible: True
+      - name: tgsymp5
+        is_visible: True
+      - name: tgsymp6
+        is_visible: True
+      - name: tgsymp7
+        is_visible: True
+      - name: tgsymp8
+        is_visible: True
+      - name: tgsymp9
+        is_visible: True
+      - name: tgsymp10
+        is_visible: True
+      - name: tgsymp11
+        is_visible: True
+      - name: tgsymp12
+        is_visible: True
+      - name: tgsymp13
+        is_visible: True
+      - name: tgsymp14
+        is_visible: True
+      - name: tgsymp15
+        is_visible: True
+      - name: tgsymp16
+        is_visible: True
+      - name: tgsymp17
+        is_visible: True
+      - name: tgsymp18
+        is_visible: False
+      - name: tgsymp19
+        is_visible: True
+      - name: tgsymp20
+        is_visible: True
+      - name: tgsymp21
+        is_visible: True
+      - name: tgsymp22
+        is_visible: True
+      - name: tgsymp23
+        is_visible: True
+      - name: tgsymp24
+        is_visible: True
+      - name: tgsymp25
+        is_visible: True
+      - name: tgsymp26
+        is_visible: True
+      - name: tgsymp27
+        is_visible: True
+      - name: tgsymp28
+        is_visible: True
+      - name: tgsymp29
+        is_visible: True
+      - name: tgsymp30
+        is_visible: True
+      - name: tgsymp31
+        is_visible: True
+      - name: tgsymp32
+        is_visible: True
+      - name: tgsymp33
+        is_visible: True
+      - name: tgsymp34
+        is_visible: True
+      - name: tgsymp35
+        is_visible: True
+      - name: tgsymp36
+        is_visible: True
+      - name: tgsymp37
+        is_visible: True
+      - name: tgsymp38
+        is_visible: True
+      - name: tgsymp39
+        is_visible: True
+      - name: tgsymp40
+        is_visible: True
+      - name: tgsymp41
+        is_visible: True
+      - name: tgsymp42
+        is_visible: True
+      - name: tgsymp43
+        is_visible: True
+      - name: tgsymp44
+        is_visible: True
+      - name: tgsymp45
+        is_visible: True
+      - name: tgsymp46
+        is_visible: True
+      - name: tgsymp47
+        is_visible: True
+      - name: tgsymp48
+        is_visible: True
+      - name: tgsymp49
+        is_visible: True
+      - name: tgsymp50
+        is_visible: True
+      - name: tgsymp51
+        is_visible: True
+      - name: tgsymp52
+        is_visible: True
+      - name: tgsymp53
+        is_visible: True
+      - name: tgsymp54
+        is_visible: True
+      - name: tgsymp55
+        is_visible: True
+      - name: tgsymp56
+        is_visible: True
+      - name: tgsymp57
+        is_visible: True
+      - name: tgsymp58
+        is_visible: True
+      - name: tgsymp59
+        is_visible: True
+      - name: tgsymp60
+        is_visible: True
+      - name: tgsymp61
+        is_visible: True
+      - name: tgsymp62
+        is_visible: True
+      - name: tgsymp63
+        is_visible: True
+      - name: tgsymp64
+        is_visible: True
+      - name: tgsymp65
+        is_visible: True
+      - name: tgsymp66
+        is_visible: True
+      - name: tgsymp67
+        is_visible: True
+      - name: tgsymp68
+        is_visible: True
+      - name: tgsymp69
+        is_visible: True
+      - name: tgsymp70
+        is_visible: True
+      - name: tgsymp71
+        is_visible: True
+      - name: tgsymp72
+        is_visible: True
+      - name: tgsymp73
+        is_visible: True
+      - name: tgsymp74
+        is_visible: True
+      - name: tgsymp75
+        is_visible: True
+      - name: tgsymp76
+        is_visible: True
+      - name: tgsymp77
+        is_visible: True
+      - name: tgsymp78
+        is_visible: True
+      - name: tgsymp79
+        is_visible: True
+      - name: tgsymp80
+        is_visible: True
+      - name: tgsymp81
+        is_visible: True
+      - name: tgsymp82
+        is_visible: True
+      - name: tgsymp83
+        is_visible: True
+      - name: tgsymp84
+        is_visible: True
+      - name: tgsymp85
+        is_visible: True
+      - name: tgsymp86
+        is_visible: True
+      - name: tgsymp87
+        is_visible: True
+      - name: tgsymp88
+        is_visible: True
+      - name: tgsymp89
+        is_visible: True
+    submission_meta_attributes:
+      - name: TextAttribute
+        description: Sample
+        type: text
+        required: False
+      - name: SingleOptionAttribute
+        description: Sample
+        type: radio
+        options: ["A", "B", "C"]
+      - name: MultipleChoiceAttribute
+        description: Sample
+        type: checkbox
+        options: ["alpha", "beta", "gamma"]
+      - name: TrueFalseField
+        description: Sample
+        type: boolean
+        required: True
+    is_restricted_to_select_one_submission: False
+    is_partial_submission_evaluation_enabled: False
+    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+  - id: 2
+    name: Test Phase
+    description: templates/challenge_phase_2_description.html
+    leaderboard_public: True
+    is_public: True
+    is_submission_public: True
+    start_date: 2019-01-01 00:00:00
+    end_date: 2099-05-24 23:59:59
+    test_annotation_file: annotations/test_annotations_testsplit.json
+    codename: test
+    max_submissions_per_day: 5
+    max_submissions_per_month: 50
+    max_submissions: 50
+    default_submission_meta_attributes:
+      - name: method_name
+        is_visible: True
+      - name: method_description
+        is_visible: True
+      - name: project_url
+        is_visible: True
+      - name: publication_url
+        is_visible: True
+      - name: pl_reg_int_use_prd_name
+        is_visible: True
+      - name: pl_reg_int_use_prd_cl_use
+        is_visible: True
+      - name: pl_reg_int_use_prd_tsk
+        is_visible: True
+      - name: pl_reg_int_use_prd_cat
+        is_visible: True
+      - name: pl_reg_int_use_prd_usrgrp
+        is_visible: True
+      - name: pl_reg_int_use_prd_opmod
+        is_visible: True
+      - name: pl_reg_int_use_prd_autl
+        is_visible: True
+      - name: dc_tv_pl_dat_src
+        is_visible: True
+      - name: dc_tv_pl_dat_numsamp
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_noise
+        is_visible: True
+      - name: dc_tv_pl_dat_mis
+        is_visible: True
+      - name: dc_tv_pl_dat_inc_exc
+        is_visible: True
+      - name: dc_reg_dat_priv
+        is_visible: True
+      - name: dc_eth_dat_priv_cons
+        is_visible: True
+      - name: dc_eth_dat_priv_anon
+        is_visible: True
+      - name: dp_tv_numsamp
+        is_visible: True
+      - name: dp_tv_gndtrh
+        is_visible: True
+      - name: dp_tv_lbl
+        is_visible: True
+      - name: dp_tv_part
+        is_visible: True
+      - name: dp_tv_ovp
+        is_visible: True
+      - name: dp_eth_de_id
+        is_visible: True
+      - name: dp_reg_gndt
+        is_visible: True
+      - name: dp_tv_prev
+        is_visible: True
+      - name: dp_tv_preprop
+        is_visible: True
+      - name: mt_eth_sen
+        is_visible: True
+      - name: mt_tv_arch
+        is_visible: True
+      - name: mtun_tv_sen
+        is_visible: True
+      - name: mtun_tv_val
+        is_visible: True
+      - name: mtun_tv_fet
+        is_visible: True
+      - name: mtun_cl_decth
+        is_visible: True
+      - name: mtun_cl_set
+        is_visible: True
+      - name: meval_eth_usr
+        is_visible: True
+      - name: meval_tv_opt
+        is_visible: True
+      - name: meval_tv_param
+        is_visible: True
+      - name: meval_tv_gen
+        is_visible: True
+      - name: meval_tv_per_comp
+        is_visible: True
+      - name: meval_tv_per_comp_dis
+        is_visible: True
+      - name: meval_tv_intp_tdoff
+        is_visible: True
+      - name: meval_cl_permet_crt
+        is_visible: True
+      - name: meval_cl_patsaf
+        is_visible: True
+      - name: meval_cl_mod_spec
+        is_visible: True
+      - name: meval_cl_rskprob
+        is_visible: True
+      - name: mdeploy_cl_lat
+        is_visible: True
+      - name: mdeploy_cl_prac
+        is_visible: True
+      - name: mdeploy_cl_care_qual
+        is_visible: True
+      - name: mdeploy_cl_wkfl_int
+        is_visible: True
+      - name: mdeploy_cl_rsk_prob
+        is_visible: True
+      - name: mdeploy_cl_inp_feat
+        is_visible: True
+      - name: mdeploy_cl_recom
+        is_visible: True
+      - name: mdeploy_cl_patcom
+        is_visible: True
+      - name: mdeploy_reg_saf
+        is_visible: True
+      - name: mmain_reg_sys
+        is_visible: True
+      - name: mmain_reg_contlr
+        is_visible: True
+      - name: pl_reg_int_use_pat_patgrp
+        is_visible: True
+      - name: pl_reg_int_use_md_devplr
+        is_visible: True
+      - name: pl_reg_int_use_md_devkt
+        is_visible: True
+      - name: pl_reg_int_use_md_devperiod
+        is_visible: True
+      - name: pl_reg_int_use_md_reg
+        is_visible: True
+      - name: pl_reg_int_use_md_lic
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_plc
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_period
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_auth
+        is_visible: True
+      - name: dc_tv_pl_dat_coll_fund
+        is_visible: True
+      - name: dc_tv_pl_dat_samprate
+        is_visible: True
+      - name: dc_tv_pl_dat_dim
+        is_visible: True
+      - name: dc_tv_pl_dat_mod
+        is_visible: True
+      - name: dc_tv_pl_dat_devtyp
+        is_visible: True
+      - name: dc_eth_dat_incl_excl
+        is_visible: True
+      - name: dp_eth_saf_sec_prtcol
+        is_visible: True
+      - name: mt_tv_out
+        is_visible: True
+      - name: meval_tv_param_config
+        is_visible: True
+      - name: tgsymp1
+        is_visible: True
+      - name: tgsymp2
+        is_visible: True
+      - name: tgsymp3
+        is_visible: True
+      - name: tgsymp4
+        is_visible: True
+      - name: tgsymp5
+        is_visible: True
+      - name: tgsymp6
+        is_visible: True
+      - name: tgsymp7
+        is_visible: True
+      - name: tgsymp8
+        is_visible: True
+      - name: tgsymp9
+        is_visible: True
+      - name: tgsymp10
+        is_visible: True
+      - name: tgsymp11
+        is_visible: True
+      - name: tgsymp12
+        is_visible: True
+      - name: tgsymp13
+        is_visible: True
+      - name: tgsymp14
+        is_visible: True
+      - name: tgsymp15
+        is_visible: True
+      - name: tgsymp16
+        is_visible: True
+      - name: tgsymp17
+        is_visible: True
+      - name: tgsymp18
+        is_visible: False
+      - name: tgsymp19
+        is_visible: True
+      - name: tgsymp20
+        is_visible: True
+      - name: tgsymp21
+        is_visible: True
+      - name: tgsymp22
+        is_visible: True
+      - name: tgsymp23
+        is_visible: True
+      - name: tgsymp24
+        is_visible: True
+      - name: tgsymp25
+        is_visible: True
+      - name: tgsymp26
+        is_visible: True
+      - name: tgsymp27
+        is_visible: True
+      - name: tgsymp28
+        is_visible: True
+      - name: tgsymp29
+        is_visible: True
+      - name: tgsymp30
+        is_visible: True
+      - name: tgsymp31
+        is_visible: True
+      - name: tgsymp32
+        is_visible: True
+      - name: tgsymp33
+        is_visible: True
+      - name: tgsymp34
+        is_visible: True
+      - name: tgsymp35
+        is_visible: True
+      - name: tgsymp36
+        is_visible: True
+      - name: tgsymp37
+        is_visible: True
+      - name: tgsymp38
+        is_visible: True
+      - name: tgsymp39
+        is_visible: True
+      - name: tgsymp40
+        is_visible: True
+      - name: tgsymp41
+        is_visible: True
+      - name: tgsymp42
+        is_visible: True
+      - name: tgsymp43
+        is_visible: True
+      - name: tgsymp44
+        is_visible: True
+      - name: tgsymp45
+        is_visible: True
+      - name: tgsymp46
+        is_visible: True
+      - name: tgsymp47
+        is_visible: True
+      - name: tgsymp48
+        is_visible: True
+      - name: tgsymp49
+        is_visible: True
+      - name: tgsymp50
+        is_visible: True
+      - name: tgsymp51
+        is_visible: True
+      - name: tgsymp52
+        is_visible: True
+      - name: tgsymp53
+        is_visible: True
+      - name: tgsymp54
+        is_visible: True
+      - name: tgsymp55
+        is_visible: True
+      - name: tgsymp56
+        is_visible: True
+      - name: tgsymp57
+        is_visible: True
+      - name: tgsymp58
+        is_visible: True
+      - name: tgsymp59
+        is_visible: True
+      - name: tgsymp60
+        is_visible: True
+      - name: tgsymp61
+        is_visible: True
+      - name: tgsymp62
+        is_visible: True
+      - name: tgsymp63
+        is_visible: True
+      - name: tgsymp64
+        is_visible: True
+      - name: tgsymp65
+        is_visible: True
+      - name: tgsymp66
+        is_visible: True
+      - name: tgsymp67
+        is_visible: True
+      - name: tgsymp68
+        is_visible: True
+      - name: tgsymp69
+        is_visible: True
+      - name: tgsymp70
+        is_visible: True
+      - name: tgsymp71
+        is_visible: True
+      - name: tgsymp72
+        is_visible: True
+      - name: tgsymp73
+        is_visible: True
+      - name: tgsymp74
+        is_visible: True
+      - name: tgsymp75
+        is_visible: True
+      - name: tgsymp76
+        is_visible: True
+      - name: tgsymp77
+        is_visible: True
+      - name: tgsymp78
+        is_visible: True
+      - name: tgsymp79
+        is_visible: True
+      - name: tgsymp80
+        is_visible: True
+      - name: tgsymp81
+        is_visible: True
+      - name: tgsymp82
+        is_visible: True
+      - name: tgsymp83
+        is_visible: True
+      - name: tgsymp84
+        is_visible: True
+      - name: tgsymp85
+        is_visible: True
+      - name: tgsymp86
+        is_visible: True
+      - name: tgsymp87
+        is_visible: True
+      - name: tgsymp88
+        is_visible: True
+      - name: tgsymp89
+        is_visible: True
+    submission_meta_attributes:
+      - name: TextAttribute
+        description: Sample
+        type: text
+      - name: SingleOptionAttribute
+        description: Sample
+        type: radio
+        options: ["A", "B", "C"]
+      - name: MultipleChoiceAttribute
+        description: Sample
+        type: checkbox
+        options: ["alpha", "beta", "gamma"]
+      - name: TrueFalseField
+        description: Sample
+        type: boolean
+    is_restricted_to_select_one_submission: False
+    is_partial_submission_evaluation_enabled: False
+
+dataset_splits:
+  - id: 1
+    name: Train Split
+    codename: train_split
+  - id: 2
+    name: Test Split
+    codename: test_split
+
+challenge_phase_splits:
+  - challenge_phase_id: 1
+    leaderboard_id: 1
+    dataset_split_id: 1
+    visibility: 1
+    leaderboard_decimal_precision: 2
+    is_leaderboard_order_descending: True
+  - challenge_phase_id: 2
+    leaderboard_id: 1
+    dataset_split_id: 1
+    visibility: 3
+    leaderboard_decimal_precision: 2
+    is_leaderboard_order_descending: True
+  - challenge_phase_id: 2
+    leaderboard_id: 1
+    dataset_split_id: 2
+    visibility: 1
+    leaderboard_decimal_precision: 2
+    is_leaderboard_order_descending: True
